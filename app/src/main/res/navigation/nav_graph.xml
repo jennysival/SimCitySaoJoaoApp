@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cadastroFragment">
 
+    <fragment
+        android:id="@+id/cadastroFragment"
+        android:name="br.com.zup.simcitysaojoao.produtos.fragments.cadastroProdutos.CadastroFragment"
+        android:label="CadastroFragment" >
+        <action
+            android:id="@+id/action_cadastroFragment_to_listaFragment"
+            app:destination="@id/listaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaFragment"
+        android:name="br.com.zup.simcitysaojoao.produtos.fragments.ListaProdutos.ListaFragment"
+        android:label="ListaFragment" />
 </navigation>
