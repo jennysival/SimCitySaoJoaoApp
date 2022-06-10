@@ -6,4 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".produtos.valorTotal.ValorTotalActivity">
 
+    <ImageView
+        android:id="@+id/iv_carrinhoTotal"
+        android:layout_width="@dimen/largura_80"
+        android:layout_height="@dimen/altura_80"
+        android:src="@drawable/carrinho"
+        android:contentDescription="@string/descricao_imagem_carrinho"
+        android:layout_marginTop="@dimen/margem_50"
+        android:layout_marginHorizontal="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_totalProdutos"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        tools:text="O valor total de todos os produtos é de: R$65.00"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamanho_fonte_14"
+        android:textAlignment="center"
+        android:layout_margin="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/iv_carrinhoTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_cadastrarNovo_valorTotal"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="@string/textoBotao_cadastrar_novo_produto"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/vermelho"
+        android:layout_marginTop="@dimen/margem_50"
+        android:layout_marginHorizontal="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/tv_totalProdutos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_verProdutos_valorTotal"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="@string/textoBotao_ver_produtos"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/verde"
+        android:layout_margin="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/btn_cadastrarNovo_valorTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
