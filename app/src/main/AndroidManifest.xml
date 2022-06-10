@@ -14,13 +14,13 @@
         android:theme="@style/Theme.SimCitySãoJoão"
         tools:targetApi="31">
         <activity
-            android:name=".ValorTotalActivity"
+            android:name=".produtos.valorTotal.ValorTotalActivity"
             android:exported="false" />
         <activity
-            android:name=".DetalhesProdutoActivity"
+            android:name=".produtos.detalhes.DetalhesProdutoActivity"
             android:exported="false" />
         <activity
-            android:name=".CadastroProdutosActivity"
+            android:name=".produtos.ProdutosActivity"
             android:exported="false" />
         <activity
             android:name=".splashScreen.SplashActivity"
