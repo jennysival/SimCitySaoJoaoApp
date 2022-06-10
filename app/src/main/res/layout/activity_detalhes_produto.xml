@@ -6,4 +6,137 @@
     android:layout_height="match_parent"
     tools:context=".produtos.detalhes.DetalhesProdutoActivity">
 
+    <ImageView
+        android:id="@+id/iv_carrinhoDetalhe"
+        android:layout_width="@dimen/largura_80"
+        android:layout_height="@dimen/altura_80"
+        android:src="@drawable/carrinho"
+        android:contentDescription="@string/descricao_imagem_carrinho"
+        android:layout_marginTop="@dimen/margem_50"
+        android:layout_marginHorizontal="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_nomeProdutoDetalhe"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        tools:text="@string/texto_pacoca"
+        android:textSize="@dimen/tamanho_fonte_16"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margem_50"
+        android:layout_marginHorizontal="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_carrinhoDetalhe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_qtdBold"/>
+
+    <TextView
+        android:id="@+id/tv_qtdBold"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_quantidade"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:layout_marginTop="@dimen/margem_50"
+        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_5"
+        android:layout_marginRight="@dimen/margem_5"
+        app:layout_constraintTop_toBottomOf="@id/iv_carrinhoDetalhe"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_inserirQtd"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        tools:text="@string/texto_20"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:layout_marginTop="@dimen/margem_50"
+        android:layout_marginBottom="@dimen/margem_5"
+        android:layout_marginRight="@dimen/margem_16"
+        android:layout_marginLeft="@dimen/margem_5"
+        app:layout_constraintTop_toBottomOf="@id/iv_carrinhoDetalhe"
+        app:layout_constraintStart_toEndOf="@id/tv_qtdBold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_valorBold"/>
+
+    <TextView
+        android:id="@+id/tv_valorBold"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_valor_unit"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:layout_marginTop="@dimen/margem_5"
+        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_5"
+        android:layout_marginRight="@dimen/margem_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_qtdBold"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_inserirValor"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        tools:text="@string/texto_R$60"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:layout_marginTop="@dimen/margem_5"
+        android:layout_marginBottom="@dimen/margem_5"
+        android:layout_marginRight="@dimen/margem_16"
+        android:layout_marginLeft="@dimen/margem_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_inserirQtd"
+        app:layout_constraintStart_toEndOf="@id/tv_valorBold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_inserirReceita"/>
+
+    <TextView
+        android:id="@+id/tv_receitaBold"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_receita"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:layout_marginTop="@dimen/margem_5"
+        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginBottom="@dimen/margem_16"
+        android:layout_marginRight="@dimen/margem_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_valorBold"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_inserirReceita"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        tools:text="@string/texto_lorem"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamanho_fonte_12"
+        android:layout_marginTop="@dimen/margem_5"
+        android:layout_marginBottom="@dimen/margem_16"
+        android:layout_marginRight="@dimen/margem_16"
+        android:layout_marginLeft="@dimen/margem_5"
+        app:layout_constraintTop_toBottomOf="@id/tv_inserirValor"
+        app:layout_constraintStart_toEndOf="@id/tv_receitaBold"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:layout_width="@dimen/largura_40"
+        android:layout_height="@dimen/altura_40"
+        android:layout_margin="@dimen/margem_16"
+        android:contentDescription="@string/descricao_icone_fav"
+        android:src="@drawable/ic_favoritar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_inserirReceita"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

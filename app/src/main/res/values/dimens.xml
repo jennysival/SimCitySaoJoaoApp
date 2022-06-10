@@ -21,4 +21,6 @@
     <dimen name="margem_16">16dp</dimen>
     <dimen name="tamanho_fonte_24">24sp</dimen>
     <dimen name="margem_300">300dp</dimen>
+    <dimen name="margem_5">5dp</dimen>
+    <dimen name="margem_50">50dp</dimen>
 </resources>
