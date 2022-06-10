@@ -84,7 +84,7 @@
         android:id="@+id/tv_inserirValor"
         android:layout_width="@dimen/largura_0"
         android:layout_height="wrap_content"
-        tools:text="@string/texto_R$60"
+        tools:text="@string/texto_RS60"
         android:textColor="@color/black"
         android:textSize="@dimen/tamanho_fonte_12"
         android:layout_marginTop="@dimen/margem_5"
