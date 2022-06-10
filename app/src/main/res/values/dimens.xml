@@ -3,21 +3,15 @@
     <dimen name="tamanho_fonte_12">12sp</dimen>
     <dimen name="tamanho_fonte_14">14sp</dimen>
     <dimen name="tamanho_fonte_16">16sp</dimen>
-
     <dimen name="altura_0">0dp</dimen>
     <dimen name="largura_0">0dp</dimen>
-
     <dimen name="altura_96">96dp</dimen>
-
     <dimen name="largura_50">50dp</dimen>
     <dimen name="altura_50">50dp</dimen>
-
     <dimen name="largura_40">40dp</dimen>
     <dimen name="altura_40">40dp</dimen>
-
     <dimen name="largura_80">80dp</dimen>
     <dimen name="altura_80">80dp</dimen>
-
     <dimen name="margem_16">16dp</dimen>
     <dimen name="tamanho_fonte_24">24sp</dimen>
     <dimen name="margem_300">300dp</dimen>

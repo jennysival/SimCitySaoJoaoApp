@@ -6,8 +6,6 @@
     <string name="titulo_activity_produtos">Produtos</string>
     <string name="titulo_activity_detalhes">Detalhes do Produto</string>
     <string name="titulo_activity_valorTotal">Valor Total</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="texto_cadastro_de_produtos">Cadastro de Produtos:</string>
     <string name="hint_nome_do_produto">Nome do produto</string>
     <string name="hint_quantidade_do_produto">Quantidade do produto</string>
@@ -21,7 +19,7 @@
     <string name="texto_quantidade">Quantidade:</string>
     <string name="texto_valor_unit">Valor unitário:</string>
     <string name="texto_receita">Receita:</string>
-    <string name="texto_lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="texto_lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
     <string name="texto_pacoca">Paçoca</string>
     <string name="texto_20">20</string>
     <string name="texto_R$60">R$60.00</string>
