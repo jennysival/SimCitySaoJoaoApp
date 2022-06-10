@@ -43,9 +43,9 @@
         android:textStyle="bold"
         android:textSize="@dimen/tamanho_fonte_12"
         android:layout_marginTop="@dimen/margem_50"
-        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginStart="@dimen/margem_16"
         android:layout_marginBottom="@dimen/margem_5"
-        android:layout_marginRight="@dimen/margem_5"
+        android:layout_marginEnd="@dimen/margem_5"
         app:layout_constraintTop_toBottomOf="@id/iv_carrinhoDetalhe"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -58,8 +58,8 @@
         android:textSize="@dimen/tamanho_fonte_12"
         android:layout_marginTop="@dimen/margem_50"
         android:layout_marginBottom="@dimen/margem_5"
-        android:layout_marginRight="@dimen/margem_16"
-        android:layout_marginLeft="@dimen/margem_5"
+        android:layout_marginEnd="@dimen/margem_16"
+        android:layout_marginStart="@dimen/margem_5"
         app:layout_constraintTop_toBottomOf="@id/iv_carrinhoDetalhe"
         app:layout_constraintStart_toEndOf="@id/tv_qtdBold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -74,9 +74,9 @@
         android:textStyle="bold"
         android:textSize="@dimen/tamanho_fonte_12"
         android:layout_marginTop="@dimen/margem_5"
-        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginStart="@dimen/margem_16"
         android:layout_marginBottom="@dimen/margem_5"
-        android:layout_marginRight="@dimen/margem_5"
+        android:layout_marginEnd="@dimen/margem_5"
         app:layout_constraintTop_toBottomOf="@id/tv_qtdBold"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -89,8 +89,8 @@
         android:textSize="@dimen/tamanho_fonte_12"
         android:layout_marginTop="@dimen/margem_5"
         android:layout_marginBottom="@dimen/margem_5"
-        android:layout_marginRight="@dimen/margem_16"
-        android:layout_marginLeft="@dimen/margem_5"
+        android:layout_marginEnd="@dimen/margem_16"
+        android:layout_marginStart="@dimen/margem_5"
         app:layout_constraintTop_toBottomOf="@id/tv_inserirQtd"
         app:layout_constraintStart_toEndOf="@id/tv_valorBold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,9 +105,9 @@
         android:textStyle="bold"
         android:textSize="@dimen/tamanho_fonte_12"
         android:layout_marginTop="@dimen/margem_5"
-        android:layout_marginLeft="@dimen/margem_16"
+        android:layout_marginStart="@dimen/margem_16"
         android:layout_marginBottom="@dimen/margem_16"
-        android:layout_marginRight="@dimen/margem_5"
+        android:layout_marginEnd="@dimen/margem_5"
         app:layout_constraintTop_toBottomOf="@id/tv_valorBold"
         app:layout_constraintStart_toStartOf="parent"/>
 
@@ -120,8 +120,8 @@
         android:textSize="@dimen/tamanho_fonte_12"
         android:layout_marginTop="@dimen/margem_5"
         android:layout_marginBottom="@dimen/margem_16"
-        android:layout_marginRight="@dimen/margem_16"
-        android:layout_marginLeft="@dimen/margem_5"
+        android:layout_marginEnd="@dimen/margem_16"
+        android:layout_marginStart="@dimen/margem_5"
         app:layout_constraintTop_toBottomOf="@id/tv_inserirValor"
         app:layout_constraintStart_toEndOf="@id/tv_receitaBold"
         app:layout_constraintEnd_toEndOf="parent"/>
