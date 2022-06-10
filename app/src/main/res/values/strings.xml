@@ -8,4 +8,12 @@
     <string name="titulo_activity_valorTotal">Valor Total</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="texto_cadastro_de_produtos">Cadastro de Produtos:</string>
+    <string name="hint_nome_do_produto">Nome do produto</string>
+    <string name="hint_quantidade_do_produto">Quantidade do produto</string>
+    <string name="hint_valor_produto">Valor(unitário) do produto</string>
+    <string name="hint_receita">Receita</string>
+    <string name="textoBotao_cadastrar_novo_produto">Cadastrar novo produto</string>
+    <string name="textoBotao_ver_produtos">Ver produtos</string>
+    <string name="textoBotao_valor_total">Valor Total</string>
 </resources>
