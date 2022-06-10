@@ -21,7 +21,7 @@
         android:id="@+id/tv_descritivoApp"
         android:layout_width="@dimen/largura_0"
         android:layout_height="wrap_content"
-        android:text="@string/texto_descritivoApp"
+        android:text="@string/texto_descritivo_app"
         android:textSize="@dimen/tamanho_fonte_12"
         android:textColor="@color/black"
         android:textAlignment="center"
