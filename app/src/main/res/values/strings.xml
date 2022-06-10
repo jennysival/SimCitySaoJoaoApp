@@ -16,4 +16,5 @@
     <string name="textoBotao_cadastrar_novo_produto">Cadastrar novo produto</string>
     <string name="textoBotao_ver_produtos">Ver produtos</string>
     <string name="textoBotao_valor_total">Valor Total</string>
+    <string name="texto_produtos_cadastrados">Produtos Cadastrados</string>
 </resources>
