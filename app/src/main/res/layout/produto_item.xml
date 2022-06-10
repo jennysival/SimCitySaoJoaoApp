@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/cv_itemLista"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margem_16"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margem_16">
+
+    <ImageView
+        android:id="@+id/iv_carrinhoCard"
+        android:layout_width="@dimen/largura_50"
+        android:layout_height="@dimen/altura_50"
+        android:src="@drawable/carrinho"
+        android:contentDescription="@string/descricao_imagem_carrinho"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_nomeProdutoCard"
+        android:layout_width="@dimen/largura_0"
+        android:layout_height="wrap_content"
+        tools:text="20 - Paçocas"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamanho_fonte_14"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/margem_16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_carrinhoCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

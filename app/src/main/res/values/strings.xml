@@ -17,4 +17,5 @@
     <string name="textoBotao_ver_produtos">Ver produtos</string>
     <string name="textoBotao_valor_total">Valor Total</string>
     <string name="texto_produtos_cadastrados">Produtos Cadastrados</string>
+    <string name="descricao_imagem_carrinho">Desenho de um carrinho de supermercado vermelho</string>
 </resources>
