@@ -1,12 +1,19 @@
 package br.com.zup.simcitysaojoao.produtos.valorTotal
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.bundleOf
+import androidx.navigation.fragment.NavHostFragment
 import br.com.zup.simcitysaojoao.databinding.ActivityValorTotalBinding
+import br.com.zup.simcitysaojoao.produtos.ProdutosActivity
+import br.com.zup.simcitysaojoao.produtos.fragments.cadastroProdutos.CadastroFragment
 import br.com.zup.simcitysaojoao.produtos.model.Produto
 import br.com.zup.simcitysaojoao.utilitaria.CHAVE_BUNDLE
+import br.com.zup.simcitysaojoao.utilitaria.CHAVE_BUNDLE2
 import br.com.zup.simcitysaojoao.utilitaria.CHAVE_LISTA
-import java.util.ArrayList
+import br.com.zup.simcitysaojoao.utilitaria.CHAVE_LISTA2
+
 
 class ValorTotalActivity : AppCompatActivity() {
     private lateinit var binding: ActivityValorTotalBinding
@@ -54,10 +61,10 @@ class ValorTotalActivity : AppCompatActivity() {
     }
 
     private fun irParaCadastro(){
-
+        onBackPressed()
     }
 
     private fun irParaLista(){
-
+        onBackPressed()
     }
 }

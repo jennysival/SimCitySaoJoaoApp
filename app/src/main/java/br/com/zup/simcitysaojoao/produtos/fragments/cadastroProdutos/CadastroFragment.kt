@@ -13,9 +13,7 @@ import br.com.zup.simcitysaojoao.R
 import br.com.zup.simcitysaojoao.databinding.FragmentCadastroBinding
 import br.com.zup.simcitysaojoao.produtos.model.Produto
 import br.com.zup.simcitysaojoao.produtos.valorTotal.ValorTotalActivity
-import br.com.zup.simcitysaojoao.utilitaria.CAMPO_OBRIGATORIO
-import br.com.zup.simcitysaojoao.utilitaria.CHAVE_BUNDLE
-import br.com.zup.simcitysaojoao.utilitaria.CHAVE_LISTA
+import br.com.zup.simcitysaojoao.utilitaria.*
 
 class CadastroFragment : Fragment() {
     private lateinit var binding: FragmentCadastroBinding
@@ -37,6 +35,7 @@ class CadastroFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.btnCadastrarNovo.setOnClickListener {
+
             adicionarProdutoNaLista()
             limparCampos()
             Toast.makeText(context, getString(R.string.toast_cadastrado),Toast.LENGTH_LONG).show()
