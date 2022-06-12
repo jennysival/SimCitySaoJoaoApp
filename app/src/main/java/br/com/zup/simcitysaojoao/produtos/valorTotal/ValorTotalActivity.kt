@@ -3,6 +3,10 @@ package br.com.zup.simcitysaojoao.produtos.valorTotal
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.zup.simcitysaojoao.databinding.ActivityValorTotalBinding
+import br.com.zup.simcitysaojoao.produtos.model.Produto
+import br.com.zup.simcitysaojoao.utilitaria.CHAVE_BUNDLE
+import br.com.zup.simcitysaojoao.utilitaria.CHAVE_LISTA
+import java.util.ArrayList
 
 class ValorTotalActivity : AppCompatActivity() {
     private lateinit var binding: ActivityValorTotalBinding
@@ -11,5 +15,49 @@ class ValorTotalActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityValorTotalBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        exibirValorTotal()
+
+        binding.btnCadastrarNovoValorTotal.setOnClickListener {
+            irParaCadastro()
+        }
+
+        binding.btnVerProdutosValorTotal.setOnClickListener {
+            irParaLista()
+        }
+    }
+
+    private fun recuperarDados(): ArrayList<Produto>? {
+        val bundleRecuperado = intent.getBundleExtra(CHAVE_BUNDLE)
+
+        return bundleRecuperado?.getParcelableArrayList(CHAVE_LISTA)
+    }
+
+    private fun calcularTotal(): Double {
+        var soma = 0.0
+
+        recuperarDados()?.forEach { produto ->
+            soma += produto.getValorTotal()
+        }
+        return soma
+    }
+
+    private fun exibirValorTotal(){
+        val valorTotal = calcularTotal()
+
+        val textoExibido = buildString {
+            append("O valor total de todos os produtos é de: R$")
+            append(valorTotal)
+        }
+
+        binding.tvTotalProdutos.text = textoExibido
+    }
+
+    private fun irParaCadastro(){
+
+    }
+
+    private fun irParaLista(){
+
     }
 }

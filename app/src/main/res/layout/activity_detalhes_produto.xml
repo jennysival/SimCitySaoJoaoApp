@@ -127,6 +127,7 @@
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <ImageView
+        android:id="@+id/icone_fav"
         android:layout_width="@dimen/largura_40"
         android:layout_height="@dimen/altura_40"
         android:layout_margin="@dimen/margem_16"
