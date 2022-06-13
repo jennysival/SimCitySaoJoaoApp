@@ -84,7 +84,7 @@ class CadastroFragment : Fragment() {
     private fun adicionarProdutoNaLista(){
         recuperarDadosDigitados()
         if(!validarCampos()){
-            listaDeProdutos.add(Produto(this.nomeProduto, this.qtdProduto.toDouble(), this.valorProduto.toDouble(), this.receitaProduto))
+            listaDeProdutos.add(Produto(this.nomeProduto, this.qtdProduto.toInt(), this.valorProduto.toInt(), this.receitaProduto))
             Toast.makeText(context, getString(R.string.toast_cadastrado),Toast.LENGTH_LONG).show()
         }
     }
