@@ -5,11 +5,11 @@ import android.os.Parcelable
 
 @Parcelize
 class Produto(private var nome: String,
-              private var quantidade: Double,
-              private var valorUn: Double,
+              private var quantidade: Int,
+              private var valorUn: Int,
               private var receita: String
 ): Parcelable {
-    private var valorTotal = 0.0
+    private var valorTotal = 0
 
     fun getNome() = this.nome
     fun getQtd() = this.quantidade
@@ -17,7 +17,7 @@ class Produto(private var nome: String,
     fun getReceita() = this.receita
     fun getValorTotal() = calcularTotal()
 
-    private fun calcularTotal(): Double{
+    private fun calcularTotal(): Int{
         valorTotal = quantidade*valorUn
 
         return valorTotal

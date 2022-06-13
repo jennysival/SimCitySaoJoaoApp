@@ -42,8 +42,8 @@ class ValorTotalActivity : AppCompatActivity() {
         return bundleRecuperado?.getParcelableArrayList(CHAVE_LISTA)
     }
 
-    private fun calcularTotal(): Double {
-        var soma = 0.0
+    private fun calcularTotal(): Int {
+        var soma = 0
 
         recuperarDados()?.forEach { produto ->
             soma += produto.getValorTotal()
@@ -57,6 +57,7 @@ class ValorTotalActivity : AppCompatActivity() {
         val textoExibido = buildString {
             append("O valor total de todos os produtos é de: R$")
             append(valorTotal)
+            append(",00")
         }
 
         binding.tvTotalProdutos.text = textoExibido

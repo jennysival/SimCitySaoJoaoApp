@@ -23,9 +23,15 @@ class DetalhesProdutoActivity : AppCompatActivity() {
         val produto = intent.getParcelableExtra<Produto>(CHAVE_PRODUTO)
 
         if(produto != null){
+            val valor = buildString {
+                append("R$")
+                append(produto.getValorUn().toString())
+                append(",00")
+            }
+
             binding.tvNomeProdutoDetalhe.text = produto.getNome()
             binding.tvInserirQtd.text = produto.getQtd().toString()
-            binding.tvInserirValor.text = produto.getValorUn().toString()
+            binding.tvInserirValor.text = valor
             binding.tvInserirReceita.text = produto.getReceita()
         }
 
