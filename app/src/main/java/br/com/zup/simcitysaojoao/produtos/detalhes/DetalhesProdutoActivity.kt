@@ -2,6 +2,7 @@ package br.com.zup.simcitysaojoao.produtos.detalhes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.widget.Toast
 import br.com.zup.simcitysaojoao.R
 import br.com.zup.simcitysaojoao.databinding.ActivityDetalhesProdutoBinding
@@ -17,6 +18,9 @@ class DetalhesProdutoActivity : AppCompatActivity() {
 
         recuperarDados()
         favoritarProduto()
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setTitle(R.string.titulo_activity_detalhes)
     }
 
     private fun recuperarDados(){
@@ -41,5 +45,13 @@ class DetalhesProdutoActivity : AppCompatActivity() {
         binding.iconeFav.setOnClickListener {
             Toast.makeText(this,getString(R.string.toast_favoritado), Toast.LENGTH_LONG).show()
         }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            onBackPressed()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
