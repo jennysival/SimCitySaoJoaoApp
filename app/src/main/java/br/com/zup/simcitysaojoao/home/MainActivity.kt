@@ -3,7 +3,6 @@ package br.com.zup.simcitysaojoao.home
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import br.com.zup.simcitysaojoao.R
 import br.com.zup.simcitysaojoao.databinding.ActivityMainBinding
 import br.com.zup.simcitysaojoao.produtos.ProdutosActivity
 
