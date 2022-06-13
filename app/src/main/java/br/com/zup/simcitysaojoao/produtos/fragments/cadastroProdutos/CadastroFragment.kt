@@ -75,10 +75,10 @@ class CadastroFragment : Fragment() {
     }
 
     private fun recuperarDadosDigitados(){
-        this.nomeProduto = binding.etNomeProduto.text.toString()
-        this.qtdProduto = binding.etQtdProduto.text.toString()
-        this.valorProduto = binding.etValorProduto.text.toString()
-        this.receitaProduto = binding.etReceita.text.toString()
+            this.nomeProduto = binding.etNomeProduto.text.toString()
+            this.qtdProduto = binding.etQtdProduto.text.toString()
+            this.valorProduto = binding.etValorProduto.text.toString()
+            this.receitaProduto = binding.etReceita.text.toString()
     }
 
     private fun adicionarProdutoNaLista(){
