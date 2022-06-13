@@ -2,8 +2,10 @@ package br.com.zup.simcitysaojoao.produtos.valorTotal
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import br.com.zup.simcitysaojoao.R
 import br.com.zup.simcitysaojoao.databinding.ActivityValorTotalBinding
 import br.com.zup.simcitysaojoao.produtos.ProdutosActivity
 import br.com.zup.simcitysaojoao.produtos.adapter.ProdutoAdapter
@@ -34,6 +36,9 @@ class ValorTotalActivity : AppCompatActivity() {
             produtoAdapter.atualizarLista(recuperarDados())
             exibirRecycler()
         }
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setTitle(R.string.titulo_activity_valorTotal)
     }
 
     private fun recuperarDados(): ArrayList<Produto> {
@@ -72,5 +77,13 @@ class ValorTotalActivity : AppCompatActivity() {
         val intent = Intent(this, DetalhesProdutoActivity::class.java)
         intent.putExtra(CHAVE_PRODUTO, produto)
         startActivity(intent)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            onBackPressed()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
