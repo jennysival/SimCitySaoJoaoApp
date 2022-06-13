@@ -13,6 +13,7 @@ import br.com.zup.simcitysaojoao.produtos.adapter.ProdutoAdapter
 import br.com.zup.simcitysaojoao.produtos.detalhes.DetalhesProdutoActivity
 import br.com.zup.simcitysaojoao.produtos.model.Produto
 import br.com.zup.simcitysaojoao.utilitaria.CHAVE_LISTA
+import br.com.zup.simcitysaojoao.utilitaria.CHAVE_LISTA2
 import br.com.zup.simcitysaojoao.utilitaria.CHAVE_PRODUTO
 
 class ListaFragment : Fragment() {
@@ -36,7 +37,8 @@ class ListaFragment : Fragment() {
 
     private fun adicionarProdutosNaLista(){
         var listaProdutos = mutableListOf<Produto>()
-        val listaRecebida = arguments?.getParcelableArrayList<Produto>(CHAVE_LISTA)
+        var listaRecebida = arguments?.getParcelableArrayList<Produto>(CHAVE_LISTA)
+
 
         if(listaRecebida != null){
             if(listaProdutos.size == 0){

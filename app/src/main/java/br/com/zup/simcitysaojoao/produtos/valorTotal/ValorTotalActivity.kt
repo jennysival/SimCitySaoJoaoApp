@@ -5,9 +5,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.NavHostFragment
+import br.com.zup.simcitysaojoao.R
 import br.com.zup.simcitysaojoao.databinding.ActivityValorTotalBinding
 import br.com.zup.simcitysaojoao.produtos.ProdutosActivity
 import br.com.zup.simcitysaojoao.produtos.fragments.cadastroProdutos.CadastroFragment
+import br.com.zup.simcitysaojoao.produtos.fragments.listaProdutos.ListaFragment
 import br.com.zup.simcitysaojoao.produtos.model.Produto
 import br.com.zup.simcitysaojoao.utilitaria.CHAVE_BUNDLE
 import br.com.zup.simcitysaojoao.utilitaria.CHAVE_BUNDLE2
@@ -65,6 +67,6 @@ class ValorTotalActivity : AppCompatActivity() {
     }
 
     private fun irParaLista(){
-        onBackPressed()
+
     }
 }

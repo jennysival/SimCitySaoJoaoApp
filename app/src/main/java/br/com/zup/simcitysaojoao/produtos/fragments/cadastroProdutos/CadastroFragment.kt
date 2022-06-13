@@ -114,4 +114,9 @@ class CadastroFragment : Fragment() {
         binding.etReceita.text.clear()
     }
 
+    private fun receberDeValorTotal(){
+
+
+    }
+
 }
