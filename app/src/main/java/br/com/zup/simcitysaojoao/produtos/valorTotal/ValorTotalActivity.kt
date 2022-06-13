@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.zup.simcitysaojoao.R
 import br.com.zup.simcitysaojoao.databinding.ActivityValorTotalBinding
-import br.com.zup.simcitysaojoao.produtos.ProdutosActivity
 import br.com.zup.simcitysaojoao.produtos.adapter.ProdutoAdapter
 import br.com.zup.simcitysaojoao.produtos.detalhes.DetalhesProdutoActivity
 import br.com.zup.simcitysaojoao.produtos.model.Produto
