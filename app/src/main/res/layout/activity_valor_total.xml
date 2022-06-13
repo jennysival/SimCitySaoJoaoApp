@@ -59,4 +59,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_listaProdutosEmValorTotal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/altura_0"
+        android:layout_margin="@dimen/margem_16"
+        app:layout_constraintTop_toBottomOf="@id/btn_verProdutos_valorTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

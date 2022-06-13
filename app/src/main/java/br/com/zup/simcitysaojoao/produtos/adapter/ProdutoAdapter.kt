@@ -23,7 +23,7 @@ class ProdutoAdapter(
         }
     }
 
-    fun atualizarLista(novaLista: MutableList<Produto>){
+    fun atualizarLista(novaLista: ArrayList<Produto>){
         if(listaDeProdutos.size == 0){
             listaDeProdutos = novaLista
         }

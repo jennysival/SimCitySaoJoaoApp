@@ -2,19 +2,19 @@ package br.com.zup.simcitysaojoao.produtos.fragments.cadastroProdutos
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.os.bundleOf
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import br.com.zup.simcitysaojoao.R
 import br.com.zup.simcitysaojoao.databinding.FragmentCadastroBinding
 import br.com.zup.simcitysaojoao.produtos.model.Produto
 import br.com.zup.simcitysaojoao.produtos.valorTotal.ValorTotalActivity
 import br.com.zup.simcitysaojoao.utilitaria.*
+
 
 class CadastroFragment : Fragment() {
     private lateinit var binding: FragmentCadastroBinding
