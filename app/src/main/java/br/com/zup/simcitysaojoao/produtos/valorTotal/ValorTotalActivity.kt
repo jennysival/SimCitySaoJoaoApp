@@ -8,17 +8,17 @@ import androidx.navigation.fragment.NavHostFragment
 import br.com.zup.simcitysaojoao.R
 import br.com.zup.simcitysaojoao.databinding.ActivityValorTotalBinding
 import br.com.zup.simcitysaojoao.produtos.ProdutosActivity
+import br.com.zup.simcitysaojoao.produtos.adapter.ProdutoAdapter
+import br.com.zup.simcitysaojoao.produtos.detalhes.DetalhesProdutoActivity
 import br.com.zup.simcitysaojoao.produtos.fragments.cadastroProdutos.CadastroFragment
 import br.com.zup.simcitysaojoao.produtos.fragments.listaProdutos.ListaFragment
 import br.com.zup.simcitysaojoao.produtos.model.Produto
-import br.com.zup.simcitysaojoao.utilitaria.CHAVE_BUNDLE
-import br.com.zup.simcitysaojoao.utilitaria.CHAVE_BUNDLE2
-import br.com.zup.simcitysaojoao.utilitaria.CHAVE_LISTA
-import br.com.zup.simcitysaojoao.utilitaria.CHAVE_LISTA2
+import br.com.zup.simcitysaojoao.utilitaria.*
 
 
 class ValorTotalActivity : AppCompatActivity() {
     private lateinit var binding: ActivityValorTotalBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,11 +28,11 @@ class ValorTotalActivity : AppCompatActivity() {
         exibirValorTotal()
 
         binding.btnCadastrarNovoValorTotal.setOnClickListener {
-            irParaCadastro()
+            irParaProdutoActivity()
         }
 
         binding.btnVerProdutosValorTotal.setOnClickListener {
-            irParaLista()
+            irParaProdutoActivity()
         }
     }
 
@@ -62,11 +62,11 @@ class ValorTotalActivity : AppCompatActivity() {
         binding.tvTotalProdutos.text = textoExibido
     }
 
-    private fun irParaCadastro(){
-        onBackPressed()
+    private fun irParaProdutoActivity(){
+        val intent = Intent(this, ProdutosActivity::class.java)
+        intent.putExtra(CHAVE_LISTA2, recuperarDados())
+        startActivity(intent)
     }
 
-    private fun irParaLista(){
 
-    }
 }

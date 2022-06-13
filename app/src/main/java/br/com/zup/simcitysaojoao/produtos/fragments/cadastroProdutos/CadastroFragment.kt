@@ -2,6 +2,7 @@ package br.com.zup.simcitysaojoao.produtos.fragments.cadastroProdutos
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -38,7 +39,6 @@ class CadastroFragment : Fragment() {
 
             adicionarProdutoNaLista()
             limparCampos()
-            Toast.makeText(context, getString(R.string.toast_cadastrado),Toast.LENGTH_LONG).show()
         }
 
         binding.btnVerProdutos.setOnClickListener {
@@ -77,6 +77,7 @@ class CadastroFragment : Fragment() {
         recuperarDadosDigitados()
         if(!validarCampos()){
             listaDeProdutos.add(Produto(this.nomeProduto, this.qtdProduto.toDouble(), this.valorProduto.toDouble(), this.receitaProduto))
+            Toast.makeText(context, getString(R.string.toast_cadastrado),Toast.LENGTH_LONG).show()
         }
     }
 
@@ -112,11 +113,6 @@ class CadastroFragment : Fragment() {
         binding.etQtdProduto.text.clear()
         binding.etValorProduto.text.clear()
         binding.etReceita.text.clear()
-    }
-
-    private fun receberDeValorTotal(){
-
-
     }
 
 }
