@@ -51,8 +51,13 @@ class CadastroFragment : Fragment() {
     }
 
     private fun irParaVerProdutosFragment(){
-        val bundle = bundleOf(CHAVE_LISTA to listaDeProdutos)
-        NavHostFragment.findNavController(this).navigate(R.id.action_cadastroFragment_to_listaFragment, bundle)
+        if(listaDeProdutos.isEmpty()){
+            Toast.makeText(context, getString(R.string.toast_listaVazia),Toast.LENGTH_LONG).show()
+        }
+        else{
+            val bundle = bundleOf(CHAVE_LISTA to listaDeProdutos)
+            NavHostFragment.findNavController(this).navigate(R.id.action_cadastroFragment_to_listaFragment, bundle)
+        }
     }
 
     private fun irParaValorTotalActivity(){
@@ -62,6 +67,9 @@ class CadastroFragment : Fragment() {
             val intent = Intent(context, ValorTotalActivity::class.java)
             intent.putExtra(CHAVE_BUNDLE, bundle)
             startActivity(intent)
+        }
+        else{
+            Toast.makeText(context, getString(R.string.toast_listaVazia),Toast.LENGTH_LONG).show()
         }
 
     }

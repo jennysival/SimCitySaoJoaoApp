@@ -26,4 +26,5 @@
     <string name="descricao_icone_fav">Desenho de coração vermelho</string>
     <string name="toast_cadastrado">Produto Cadastrado com Sucesso!</string>
     <string name="toast_favoritado">Produto favoritado!</string>
+    <string name="toast_listaVazia">Não há produtos cadastrados!</string>
 </resources>
